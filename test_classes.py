@@ -68,5 +68,5 @@ class Test:
         assert self.tv.__str__() == 'TV Status: Is on = True, Channel = 0, Volume = 0'
 
     def test_str(self):
-        assert self.tv.__str__() == str
+        assert type(self.tv.__str__()) == str
         assert self.tv.__str__() == 'TV Status: Is on = False, Channel = 0, Volume = 0'
