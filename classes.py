@@ -2,19 +2,19 @@ class Television:
     """
     Class that represents the TV objects.
     """
-    MIN_CHANNEL = 0     # Minimum TV channel
-    MAX_CHANNEL = 3     # Maximum TV channel
+    MIN_CHANNEL: int = 0     # Minimum TV channel
+    MAX_CHANNEL: int = 3     # Maximum TV channel
 
-    MIN_VOLUME = 0      # Minimum TV volume
-    MAX_VOLUME = 2      # Maximum TV volume
+    MIN_VOLUME: int = 0      # Minimum TV volume
+    MAX_VOLUME: int = 2      # Maximum TV volume
 
     def __init__(self) -> None:
         """
         Method to set the default parameters of the TV.
         """
-        self.__TV_channel = self.MIN_CHANNEL
-        self.__TV_volume = self.MIN_VOLUME
-        self.__TV_status = False
+        self.__TV_channel: int = self.MIN_CHANNEL
+        self.__TV_volume: int = self.MIN_VOLUME
+        self.__TV_status: bool = False
 
     def power(self) -> None:
         """
